@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{ 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ;  
+    font-weight: 700;
+    margin: auto;
+}#banner{
+    width: 100%;
+}
+.logo{
+    /* width: 240px; */
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+}
+li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 30px;
+    margin-bottom: 80px;
+}ul{
+    text-align: center;
+}
+
+input[placeholder] {
+    color:whitesmoke ;
+}
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .champion{
+        margin-left: 20px;
+        margin-top: 350px;
+        /* line-height: 759px; */
+    }
+    .champion h3{
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .champion p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    
+    }
+    .champion button{
+        font-size: 20px;
+        width: 250px;
+        height: 50px;
+        background-color: #0E4C67
+        ;
+        color: white;
+        border: none;
+        font-size: bold;
+    }
+    .favorite h3{
+        text-align: center;
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+    .item{
+        margin-left: 13px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+    
+        margin-bottom: 64px;
+    }
+    .footer{
+        position: relative;
+        background-color: #0E4C67    ;
+        height: 60px;
+        line-height: 60px;
+    }
+    .footer p{
+        margin-left: 10px;
+        color: #fff;
+    }
+    .click{
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+    .click button{
+        height: 36px;
+        background-color: #FFA800    ;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 0 +6px;
+        font-size: 12px;
+        padding-left: 10px;
+        font-weight: 700;
+    }
+    .click input{
+        height: 36px;
+        border-radius: 5px;
+        background:  #0E4C67;
+        padding-left: 20px;
+        border-color :#FFA800;
+      margin-right:10px ;
+    
+    
+    }
+
+    /* molbie */
+ @media only screen and (max-width: 739px) {
+    
+    .container{
+        text-align: center;
+        
+    }
+.content{
+    display: grid;
+    grid-template-columns: none;
+}
+.item{
+    display: grid;
+    grid-template-columns: none;
+padding-left: 76px;
+}
+
+.item img{
+
+   border-radius: 3px;
+    margin-right: 20px;
+}
+.footer{
+    width: 100%;
+}
+ .p{
+    /* margin-right: 520px; */
+    position: absolute;
+}
+ }
+
+ 
