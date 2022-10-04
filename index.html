@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="banner">
-                <img id="banner" src="img/banner.jpg" alt="">
-            </div>
-            <div class="logo">
-                <img src="/img/logo2.png" alt="">
-            </div>
-            <div class="nav">
-                <ul>
-                    <li>Game</li>
-                    <li>Champions</li>
-                    <li>News</li>
-                    <li>Patch Notes</li>
-                    <li>Discover</li>
-                    <li>Esports</li>
-                    <li>Universe</li>
-                </ul>
-            </div>
-        </div>
+  <body>
+    <div>
+      <!-- banner -->
+      <div>
+        <img class="w-full" src="img/banner.jpg" alt="" />
+      </div>
+      <!-- logo -->
+      <div class="mt-10 flex items-center justify-center">
+        <img src="/img/logo2.png" alt="" />
+      </div>
 
-        <div class="main">
-            <div class="content">
-                <div class="champion">
-                    <h3>CHOOSE YOUR CHAMPION</h3>
-                    <p>Whether you like to dive straight into the fray, support your teammates, or something in between,
-                        there’s a spot for you on the Rift.</p>
-                    <button>Discover More Champions</button>
-                </div>
-                <div class="jinx">
-                    <img src="img/jinx.png" alt="">
-                </div>
-            </div>
-            <div class="favorite">
-                <h3>FAVOURITE CHAMPIONS</h3>
-                <div class="item">
-                    <div class="item">
-                        <img  src="img/yassuo.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="img/sophia.jpg" alt="">
+      <!-- menu -->
+      <div class="mt-12 flex items-center justify-center">
+        <ul>
+          <li class="text-xl inline-block p-2">
+            <a class="font-bold" href="">Game</a>
+          </li>
+          <li class="text-xl inline-block p-2">
+            <a class="font-bold" href="">Champions</a>
+          </li>
+          <li class="text-xl inline-block p-2">
+            <a class="font-bold" href="">News</a>
+          </li>
+          <li class="text-xl inline-block p-2">
+            <a class="font-bold" href="">Patch Notes</a>
+          </li>
+          <li class="text-xl inline-block p-2">
+            <a class="font-bold" href="">Discover</a>
+          </li>
 
-                    </div>
-                    <div class="item">
-                        <img src="img/irelia.jpg" alt="">
-
-
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-        <div class="footer">
-            <p class="p" >© 2021 All Rights Reserved</p>
-            <div class="click">
-                <input placeholder="Email Address" type="text">
-                <button>Play For Free</button>
-            </div>
-            
-        </div>
+          <li class="text-xl inline-block p-2">
+            <a class="font-bold" href="">Esports</a>
+          </li>
+          <li class="text-xl inline-block p-2">
+            <a class="font-bold" href="">Universe</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</body>
 
+    <!-- main -->
+    <div>
+      <!-- content -->
+      <div class="pl-4 mt-12 grid grid-cols-2 gap-10 pt-6">
+        <!-- content_champion -->
+        <div class="mb-9 relative top-[330px]">
+          <h3 class="text-4xl mb-6 font-bold">CHOOSE YOUR CHAMPION</h3>
+          <p class="mb-2 font-bold">
+            Whether you like to dive straight into the fray, support your
+            teammates, or something in between, there’s a spot for you on the
+            Rift.
+          </p>
+          <button
+            class="text-white text-base uppercase w-[280px] h-8 bode rounded bg-indigo-500"
+          >
+            Discover More Champions
+          </button>
+        </div>
+
+        <div class="pl-6">
+          <img src="img/jinx.png" alt="" />
+        </div>
+      </div>
+      <!-- favorite -->
+      <div">
+        <h3 class=" mt-24 mb-5 text-center text-4xl mb-6 font-bold">FAVOURITE CHAMPIONS</h3>
+        <div class="flex justify-evenly flex-1">
+          <div class="">
+            <img src="img/yassuo.jpg" alt="" />
+          </div>
+          <div class="">
+            <img src="img/sophia.jpg" alt="" />
+          </div>
+          <div class="">
+            <img src="img/irelia.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-teal-800 mt-7  flex justify-between h-16 max-w-full items-center" >
+      <p class="text-white text-lg">© 2021 All Rights Reserved</p>
+      <div class="pr-7">
+        <input class="mr-7 text-white py-2 pl-2 bg-teal-800 border-yellow-600" placeholder="Email Address" type="text" />
+        <button class=" rounded bg-yellow-500 text-white p-2">Play For Free</button>
+      </div>
+    </div>
+  </body>
 </html>
